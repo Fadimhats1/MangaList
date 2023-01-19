@@ -198,17 +198,27 @@
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/genreValue"
+                            <ScrollView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textAlignment="center"
-                                android:textColor="@color/colorGold"
-                                android:textSize="@dimen/_12sdp"
-
-                                android:textStyle="bold"
-                                tools:text="@tools:sample/lorem" />
+                                >
+                                <LinearLayout
+                                    android:layout_marginVertical="@dimen/_4sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    >
+                                    <TextView
+                                        android:id="@+id/genreValue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorGold"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold"
+                                        tools:text="@tools:sample/lorem" />
+                                </LinearLayout>
+                            </ScrollView>
 
                         </LinearLayout>
                     </LinearLayout>
